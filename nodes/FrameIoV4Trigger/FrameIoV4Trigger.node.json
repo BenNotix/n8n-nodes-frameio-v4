@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-frameio-v4.frameIoV4Trigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/picture-element/n8n-nodes-frameio-v4?tab=readme-ov-file#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/picture-element/n8n-nodes-frameio-v4?tab=readme-ov-file"
+			}
+		]
+	}
+}
