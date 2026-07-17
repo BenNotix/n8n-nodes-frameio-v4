@@ -14,7 +14,7 @@ export class FrameIoV4ServerToServerApi implements ICredentialType {
 	displayName = 'Frame.io V4 Server-to-Server API';
 
 	documentationUrl =
-		'https://github.com/Picture-Element/n8n-nodes-frameio-v4?tab=readme-ov-file#credentials';
+		'https://github.com/BenNotix/n8n-nodes-frameio-v4?tab=readme-ov-file#credentials';
 
 	icon: Icon = { light: 'file:../icons/frameio.svg', dark: 'file:../icons/frameio.dark.svg' };
 

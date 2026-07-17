@@ -12,14 +12,14 @@
 		"media"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/Picture-Element/n8n-nodes-frameio-v4",
+	"homepage": "https://github.com/BenNotix/n8n-nodes-frameio-v4",
 	"author": {
 		"name": "Ben Gosciniak",
 		"email": "ben@picture-element.fr"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Picture-Element/n8n-nodes-frameio-v4.git"
+		"url": "https://github.com/BenNotix/n8n-nodes-frameio-v4.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",

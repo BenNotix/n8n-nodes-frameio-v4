@@ -6,12 +6,12 @@
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://github.com/Picture-Element/n8n-nodes-frameio-v4?tab=readme-ov-file#credentials"
+				"url": "https://github.com/BenNotix/n8n-nodes-frameio-v4?tab=readme-ov-file#credentials"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://github.com/Picture-Element/n8n-nodes-frameio-v4?tab=readme-ov-file"
+				"url": "https://github.com/BenNotix/n8n-nodes-frameio-v4?tab=readme-ov-file"
 			}
 		]
 	}
