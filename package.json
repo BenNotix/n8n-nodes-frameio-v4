@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-frameio-v4",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "n8n community nodes for the Frame.io V4 API (Adobe) — projects, folders, files, uploads, comments, shares, version stacks and webhook triggers",
 	"keywords": [
 		"n8n-community-node-package",

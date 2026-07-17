@@ -1,11 +1,9 @@
-# Publishes the package to npm with a provenance attestation.
-# From May 1st 2026, all n8n community nodes must be published via
-# GitHub Actions with npm provenance. `npm run release` (n8n-node release)
-# runs lint + build and then `npm publish` with provenance enabled; the
-# @n8n/node-cli prepublish guard only allows publishing through this flow.
-# Authentication uses the NPM_TOKEN repository secret. Once the package
-# exists on npm you can switch to Trusted Publishing (OIDC) and drop the
-# token.
+# Publishes the package to npm with a provenance attestation via npm
+# Trusted Publishing (OIDC) — no long-lived token. The trusted publisher
+# must be configured on npmjs.com for this repo + workflow filename.
+# `npm run release` (n8n-node release) runs lint + build and then
+# `npm publish` with provenance; the @n8n/node-cli prepublish guard only
+# allows publishing through this flow.
 name: Publish
 
 on:
@@ -15,7 +13,7 @@ on:
 
 permissions:
   contents: read
-  id-token: write # required for npm provenance (and for Trusted Publishing)
+  id-token: write # required for npm provenance and Trusted Publishing (OIDC)
 
 jobs:
   publish:
@@ -27,11 +25,10 @@ jobs:
           node-version: 22
           cache: npm
           registry-url: https://registry.npmjs.org
+      # Trusted Publishing requires npm >= 11.5.1 (Node 22 ships npm 10)
+      - run: npm install -g npm@latest
       - run: npm ci
       - run: npm run release
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          # Provenance on a first-time (never-published) package requires an
-          # explicit public access; n8n-node release does not pass --access,
-          # so set it via env (npm applies NPM_CONFIG_* to the inner publish).
+          # Harmless on an existing public package; keeps provenance happy.
           NPM_CONFIG_ACCESS: public
