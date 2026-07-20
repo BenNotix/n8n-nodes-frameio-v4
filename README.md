@@ -1,5 +1,9 @@
 # n8n-nodes-frameio-v4
 
+[![npm version](https://img.shields.io/npm/v/n8n-nodes-frameio-v4.svg)](https://www.npmjs.com/package/n8n-nodes-frameio-v4)
+[![npm downloads](https://img.shields.io/npm/dm/n8n-nodes-frameio-v4.svg)](https://www.npmjs.com/package/n8n-nodes-frameio-v4)
+[![License: MIT](https://img.shields.io/npm/l/n8n-nodes-frameio-v4.svg)](LICENSE.md)
+
 This is an n8n community node package for the **[Frame.io](https://frame.io) V4 API** (Adobe). It lets you automate Frame.io — the cloud-based video review and collaboration platform — natively from your [n8n](https://n8n.io) workflows, similar to the official Frame.io V4 apps for Zapier and Make.
 
 It ships two nodes:
